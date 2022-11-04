@@ -1,10 +1,20 @@
-// function([string1, string2],target id,[color1,color2])    
-consoleText(["37 cái đầu 🙄",
+// function([string1, string2],target id,[color1,color2]) 
+/*consoleText(["37 cái đầu 🙄",
     "Ở tận đẩu đâu 🧐",
     "Sao chẳng đứa nào rủ nhau 🙃",
     "Mà túm tụm cùng một chỗ ?! 😱",
     "Chí chóe lẫn nhau 😜",
-    "Cũng được 30 năm rồi đấy! 😍"], 'text', ['#3f3']);
+    "Cũng được 30 năm rồi đấy! 😍"], 'text', ['#3f3']); */
+
+consoleText(["BA MƯƠI BẢY CÁI ĐẦU 🙄",
+    "Ở TẬN ĐẨU TẬN ĐÂU 🧐",
+    "CHẲNG ĐỨA NÀO RỦ NHAU 🙃",
+    "MÀ TÚM TỤM MỘT CHỖ ?! 🥳 😱 🥳 🥴",
+    "CHUYỆN BUÔN DÀI MUÔN THUỞ 👫",
+    "CHÍ CHÓE CŨNG ĐÔI NGÀY 🍻",
+    "THỜI GIAN NHƯ GIÓ BAY 🌬 🌑 🌔 🌕 🌖",
+    "BA MƯƠI NĂM RỒI ĐẤY! 😍 🎉 🎊 "
+    ], 'text', ['#3f3']);
 
 function consoleText(words, id, colors) {
     if (colors === undefined) colors = ['#fff'];
