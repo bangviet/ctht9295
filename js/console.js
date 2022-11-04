@@ -10,8 +10,8 @@ consoleText(["BA MƯƠI BẢY CÁI ĐẦU 🙄",
     "Ở TẬN ĐẨU TẬN ĐÂU 🧐",
     "CHẲNG ĐỨA NÀO RỦ NHAU 🙃",
     "MÀ TÚM TỤM MỘT CHỖ ?! 🥳 😱 🥳 🥴",
-    "CHUYỆN BUÔN DÀI MUÔN THUỞ 👫",
-    "CHÍ CHÓE CŨNG ĐÔI NGÀY 🍻",
+    "CHUYỆN BUÔN DÀI MUÔN THUỞ 👫 🧑‍🔬 🧑‍💻 👩‍🎨",
+    "CHÍ CHÓE CŨNG ĐÔI NGÀY 🍻 🍹 🍾",
     "THỜI GIAN NHƯ GIÓ BAY 🌬 🌑 🌔 🌕 🌖",
     "BA MƯƠI NĂM RỒI ĐẤY! 😍 🎉 🎊 "
     ], 'text', ['#3f3']);
@@ -38,19 +38,19 @@ function consoleText(words, id, colors) {
                 target.setAttribute('style', 'color:' + colors[0]);
                 letterCount += x;
                 waiting = false;
-            }, 2000);
+            }, 1000);
         } else if (letterCount === words[0].length + 1 && waiting === false) {
             waiting = true;
             window.setTimeout(function () {
                 x = -1;
                 letterCount += x;
                 waiting = false;
-            }, 2000);
+            }, 1000);
         } else if (waiting === false) {
             target.innerHTML = words[0].substring(0, letterCount);
             letterCount += x;
         }
-    }, 150);
+    }, 120);
     window.setInterval(function () {
         if (visible === true) {
             con.className = 'console-underscore hidden';
@@ -59,5 +59,5 @@ function consoleText(words, id, colors) {
             con.className = 'console-underscore';
             visible = true;
         }
-    }, 300);
+    }, 400);
 }
