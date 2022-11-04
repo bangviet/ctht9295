@@ -3,3 +3,25 @@
     text-align: center;
     vertical-align: middle;
 }
+
+#bttStartGallery{
+    position:fixed;
+    bottom:20px;
+    right:30px;
+    z-index:999;
+}
+#bttPauseGallery{
+    position:fixed;
+    display:none;
+    bottom:20px;
+    right:30px;
+    z-index:998;
+}
+
+#emancipatorAlbum{
+    position:fixed;
+    bottom:20px;
+    right:30px;
+    z-index:997;
+    display:block;
+}
