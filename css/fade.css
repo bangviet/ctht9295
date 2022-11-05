@@ -4,24 +4,32 @@
     vertical-align: middle;
 }
 
+#bttStartEmancipator{
+    position:fixed;
+    display:none;
+    bottom:20px;
+    right:60px;
+    z-index:999;
+}
+
 #bttStartGallery{
     position:fixed;
     bottom:20px;
     right:30px;
-    z-index:999;
+    z-index:998;
 }
 #bttPauseGallery{
     position:fixed;
     display:none;
     bottom:20px;
     right:30px;
-    z-index:998;
+    z-index:997;
 }
 
 #emancipatorAlbum{
     position:fixed;
     bottom:20px;
     right:30px;
-    z-index:997;
+    z-index:996;
     display:block;
 }

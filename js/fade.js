@@ -191,11 +191,27 @@ $(document).ready(function () {
             emanx = 0;
         }
         var player = document.getElementById("emancipator");
-        player.src = songlist[emanx];
-        player.load();
-        player.play();
+        var promise = player.play();
+        if (promise !== undefined) {
+            promise.then(function () {
+                player.src = songlist[emanx];
+                player.load();
+                player.play();
+                document.getElementById("bttStartEmancipator").style.display = "none";
+            }).catch(function (error) {
+                document.getElementById("bttStartEmancipator").style.display = "block";
+            });
+        }
     });
 });
+
+function startEmancipator() {
+    var player = document.getElementById("emancipator");
+    player.src = songlist[emanx];
+    player.load();
+    player.play();
+    document.getElementById("bttStartEmancipator").style.display = "none";
+}
 
 function startGallery() {
     images[cur].style.opacity = 1;
@@ -203,10 +219,7 @@ function startGallery() {
     document.getElementById("bttStartGallery").style.display = "none";
     document.getElementById("bttPauseGallery").style.display = "block";
     if (isFirst) {
-        var player = document.getElementById("emancipator");
-        player.src = songlist[emanx];
-        player.load();
-        player.play();
+        startEmancipator();
         isFirst = false;
     }
 }
