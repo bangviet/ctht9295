@@ -187,7 +187,7 @@ $(document).ready(function () {
     emanx = 0;
     document.getElementById("emancipator").addEventListener('ended', function () {
         emanx++;
-        if (emanx > songlist.length) {
+        if (emanx >= songlist.length) {
             emanx = 0;
         }
         var player = document.getElementById("emancipator");
